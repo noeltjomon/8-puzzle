@@ -4,6 +4,7 @@
 #include <list>
 #include <set>
 #include <queue>
+#include <array>
 typedef std::vector<std::vector<int>> STATE;
 
 struct Node{
