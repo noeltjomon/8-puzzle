@@ -4,7 +4,6 @@
 #include <list>
 #include <set>
 #include <queue>
-#include <array>
 typedef std::vector<std::vector<int>> STATE;
 
 struct Node{
@@ -84,7 +83,6 @@ int getHeuristics(STATE state){
             if(state[x][y]!=goal[x][y])
              heuristic++;
         }}    
-        //std::cout<<heuristic<<"\n";
     return heuristic;
   
 }
@@ -136,7 +134,6 @@ std::vector<STATE> aStar(STATE &start){
                 parent[child] = current.state;
                 if(nchild.f_value<exp_fvalue[nchild.state])
                exp_fvalue[child] = nchild.f_value;
-                //std::cout<<"here";
             }
             
             
